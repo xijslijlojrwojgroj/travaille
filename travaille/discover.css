@@ -1,0 +1,191 @@
+.destinations-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .destinations-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+  
+  .filters-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .filter-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .filter-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #apply-filters, #reset-filters {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  #apply-filters {
+    background-color:#454163;
+    ;
+    color: white;
+  }
+  
+  #apply-filters:hover {
+    background-color:#655f93;
+  }
+
+  
+  #reset-filters {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  #reset-filters:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .results-summary {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .destination-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .card-details {
+    margin-top: 10px;
+  }
+  
+  .card-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .rating {
+    color: #FFA500;
+    margin-right: 5px;
+  }
+  
+  .price-indicator {
+    font-weight: bold;
+  }
+  
+  .budget {
+    color: #4CAF50;
+  }
+  
+  .mid-range {
+    color: #2196F3;
+  }
+  
+  .luxury {
+    color: #9C27B0;
+  }
+  
+  .card-category {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #666;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    .filters-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .filter-group {
+      width: 100%;
+    }
+    
+    .filter-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    #apply-filters, #reset-filters {
+      flex: 1;
+    }
+  }

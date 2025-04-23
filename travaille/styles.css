@@ -1,0 +1,264 @@
+html,
+body {
+  overflow: auto;
+  /* Allows scrolling */
+  height: 100%;
+  /* Ensures content expands */
+}
+
+nav {
+    background-color: #454163;
+    color: white;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+  
+  .navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 10px;
+    flex-shrink: 0;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-list li a:hover {
+    color: #dbc2f1;
+  }
+  
+  .profile-icon i {
+    font-size: 28px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .profile-icon i:hover {
+    color: #dbc2f1;
+  }
+  
+  button {
+    background-color: white;
+    color: #454163;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Pixelify Sans', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #dbc2f1;
+    color: #454163;
+  }
+  
+
+* {
+  margin: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+button {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 24px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(128, 128, 128, 1);
+  ;
+}
+
+#back-to-home {
+  padding-left: 15px;
+  color: white;
+}
+
+.login-signup-page a {
+  color: black;
+}
+
+.login-signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  text-align: center;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+}
+
+.login-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.login-signup form input,
+.login-signup form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+}
+
+#login-createacc {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+#logo img {
+  width: 90%;
+  /* Responsive */
+  max-width: 600px;
+  /* Prevents it from getting too big */
+  height: auto;
+  /* Maintains aspect ratio */
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Space between input and button */
+  position: relative;
+  width: 100%;
+}
+
+.searchbar input {
+  height: 50px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 50px;
+  border: none;
+  background-color: #EEEE;
+  color: #919191;
+  font-size: 24px;
+  padding-left: 45px;
+  /* Space for icon */
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.searchbar button {
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #EEEE;
+  color: #919191;
+  font-size: 24px;
+  font-family: 'Pixelify Sans', sans-serif;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.searchbar button:hover {
+  background-color: #454163;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar .logo {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .navbar .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.how-it-works {
+  flex-direction: column;
+  /* margin-top: 150px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.how-it-works h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #454163;
+  margin-bottom:50px;
+}
+
+.info-all{
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Space between boxes */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+.box {
+    background-color: #DBC2F1;
+    color: #454163;
+    height: 210px;
+    width: 230px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box:hover {
+    background-color: #bfa2e5;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
